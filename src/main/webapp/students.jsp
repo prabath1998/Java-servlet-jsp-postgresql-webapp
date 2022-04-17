@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@  page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Students</title>
 <style>
 #stud {
   font-family: Arial, Helvetica, sans-serif;
@@ -29,9 +29,29 @@
   background-color: #ff6347;
   color: white;
 }
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonH {
+   background-color: white; 
+  color: black; 
+  border: 2px solid #f44336
+}
 </style>
 </head>
 <body>
+	<button class="button buttonH"> <a href="index.html">Home</a> </button>
 	<div align="center">
 	<h1>Student Registered Successfully..!</h1>
 	<table id="stud">
@@ -81,5 +101,6 @@
 	</table>
 	
 	</div>
+	
 </body>
 </html>

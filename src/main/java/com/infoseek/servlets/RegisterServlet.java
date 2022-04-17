@@ -2,6 +2,8 @@ package com.infoseek.servlets;
 
 import jakarta.servlet.RequestDispatcher;
 
+
+
 import jakarta.servlet.ServletException;
 
 import jakarta.servlet.annotation.WebServlet;
@@ -31,11 +33,6 @@ public class RegisterServlet extends HttpServlet {
 		System.out.println("Do get..!");
 		RequestDispatcher dispatcher = request.getRequestDispatcher("studentdetails.html");
 		dispatcher.forward(request, response);
-		
-		List<Student> studentsList = studentDao.getAllStudents();
-		
-		
-		
 		
 	}
 

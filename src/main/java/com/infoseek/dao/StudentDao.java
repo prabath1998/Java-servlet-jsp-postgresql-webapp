@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.jasper.tagplugins.jstl.core.If;
+
 import com.infoseek.model.Student;
 import com.infoseek.util.JDBCUtil;
 
@@ -70,8 +72,12 @@ public class StudentDao {
 			System.out.println(e.getMessage());
 		}
 		
+		
+		
 		return students;
 	}
+	
+	
 	
 
 }
