@@ -51,9 +51,9 @@
 </style>
 </head>
 <body>
-	<button class="button buttonH"> <a href="index.html">Home</a> </button>
+	<button class="button buttonH"> <a href="index.html">Logout</a> </button>
 	<div align="center">
-	<h1>Student Registered Successfully..!</h1>
+	<h1>Registered Students</h1>
 	<table id="stud">
 		<tr>
 		<th>ID</th>
@@ -65,10 +65,7 @@
 		<th>Education</th>
 		<th>Marital Status</th>
 		<th>Higher Education</th>
-		</tr>
-		
-		
-		
+		</tr>		
 		<%
 		
 		try{

@@ -66,7 +66,7 @@ public class RegisterServlet extends HttpServlet {
 			System.out.println(e.getMessage());
 		}
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("students.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("index.html");
 		dispatcher.forward(request, response);
 		
 	}

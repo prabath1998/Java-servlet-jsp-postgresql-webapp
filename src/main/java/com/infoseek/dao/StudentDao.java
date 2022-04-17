@@ -76,7 +76,26 @@ public class StudentDao {
 		
 		return students;
 	}
-	
+
+	public boolean validate(Student student) {
+		Connection connection = null;
+		PreparedStatement preStat = null;
+		ResultSet rs = null;
+		boolean status = false;
+		connection = JDBCUtil.getConnection();
+		
+		String selectSQL = "SELECT username,password FROM student WHERE username = ? and password = ?";
+		try {
+			preStat = connection.prepareStatement(selectSQL);
+			preStat.setString(1, student.getUsername());
+			preStat.setString(2, student.getPassword());
+			rs = preStat.executeQuery();
+			status = rs.next();
+		} catch (SQLException e) {			
+			e.printStackTrace();
+		}
+		return status;
+	}	
 	
 	
 
